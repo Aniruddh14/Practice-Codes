@@ -1,0 +1,9 @@
+a = [1,1,4,2,5,6]
+for i in range(len(a)) :
+  if a[abs(a[i])-1]>0 :
+    a[abs(a[i])-1]=-a[abs(a[i])-1]
+  else :
+    print("Repeating no is : ",abs(a[i]))
+for i in range(len(a)) :
+  if a[i]>0 :
+    print("Missing no is :",i+1)
