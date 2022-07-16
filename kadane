@@ -1,0 +1,24 @@
+def masu(a,n) :
+  msf=a[0]
+  meh=0
+  e=0
+  for i in range(n):
+    meh+=a[i]
+    if meh>msf :
+      msf=meh
+      e=i
+    if meh<0 :
+      meh=0
+  s=e
+  gm=msf
+  while s>=0:
+    gm-=a[s]
+    if gm==0 :
+      break
+    s-=1
+  for i in range(s,e+1):
+    print(a[i],end=" ")
+
+
+a=[-2, -3, 4, -1, -2, 1, 5, -8]
+masu(a,len(a))
